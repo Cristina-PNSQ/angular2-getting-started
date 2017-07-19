@@ -15,7 +15,6 @@ var ProductListComponent = (function () {
         this.showImage = true;
         this.filterKey = 'cart';
         this.productList = [{
-           
                 "productId": 1,
                 "productName": "Leaf Rake",
                 "productCode": "GDN-0011",
