@@ -10,6 +10,10 @@ var core_1 = require("@angular/core");
 var ProductListComponent = (function () {
     function ProductListComponent() {
         this.pageTitle = 'Product List!!!';
+        this.imageWidth = 50;
+        this.imageMargin = 2;
+        this.showImage = true;
+        this.filterKey = 'cart';
         this.productList = [{
                 "productId": 1,
                 "productName": "Leaf Rake",
@@ -31,6 +35,9 @@ var ProductListComponent = (function () {
                 "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
             }];
     }
+    ProductListComponent.prototype.toggleImage = function () {
+        this.showImage = !this.showImage;
+    };
     ProductListComponent = __decorate([
         core_1.Component({
             selector: 'pm-products',
